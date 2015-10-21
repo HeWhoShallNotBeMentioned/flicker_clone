@@ -1,0 +1,6 @@
+<h1><%= @picture.caption %></h1>
+
+<%= image_tag @picture.pic.url %>
+<%= image_tag @picture.pic.url(:thumb) %>
+
+<p><%= link_to "Return to pictures", pictures_path %></p>

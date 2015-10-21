@@ -1,0 +1,12 @@
+<h1>Flickr-Clone super original^^</h1>
+<p>
+    This app sucks!
+</p>
+
+<ul>
+  <% @pictures.each do |picture| %>
+    <li><%= link_to picture.caption, picture_path(picture)%><br>
+        <img src="<%= picture.content %>" id="thumbnail">
+    </li>
+  <% end %>
+</ul>

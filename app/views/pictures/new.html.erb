@@ -1,0 +1,8 @@
+<h1>Add new picture</h1>
+
+<%= form_for @picture, url: pictures_path, html: { multipart: true } do |form| %>
+<%=f.label :pic %>
+<%= form.file_field :pic %>
+<%=f.label :caption %>
+<%= form.text_field :caption %>
+<% end %>
